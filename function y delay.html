@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+  background:
+linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+background-color: #131313;
+background-size: 20px 20px;
+}
+
+.container {
+  margin: 20px 40px;  
+}
+.container:hover .circle {
+  transform: translateX(350px);
+}
+
+.circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 12px;
+  box-shadow: 0px 0px 30px 0px rgba(30,255,0,0.6), inset 0px 0px 18px 12px rgba(30,255,0,0.6);
+  transform: scale(.8);
+}
+.one {
+  transition: transform 1.5s linear;
+  transition-delay: 0.5s;
+}
+
+.two {
+  transition: transform 1s ease;
+  transition-delay: 1s;
+}
+.three {
+  transition: transform 2s ease-out;
+  transition-delay: 0.5s;
+}
+.four {
+  transition: transform 2s ease-out;
+  transition-delay: 0.5s;
+}
+.five {
+  transition: transform 1s ease;
+  transition-delay: 1s;
+}
+.six {
+  transition: transform 1.5s linear;
+  transition-delay: 0.5s;
+}
+      
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="circle one"></div>
+        <div class="circle two"></div>
+        <div class="circle three"></div>
+        <div class="circle four"></div>
+        <div class="circle five"></div>
+        <div class="circle six"></div>
+        </div>
+</body>
+</html>

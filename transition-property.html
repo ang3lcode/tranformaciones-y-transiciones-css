@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(100px, 200px));
+  grid-gap: 10px;
+  border: 1px solid #ccc;
+  width: 100%;
+  height: 60vh;
+  align-items: center;
+  place-content: center;
+  cursor: pointer;
+  background: #f2f2f2;
+  padding-bottom: 22%;
+  background-image: url(../images/table.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.container-card {
+  transform: rotateY(180deg);
+  position: relative;
+}
+
+.front.back, img {
+  width: 100%;
+  height: 295px;
+  background: #fff;
+  border-radius: 15px;
+}
+
+.img-nipe {
+  padding: 15px 6px;
+  background: #fff;
+  border-radius: 15px;
+}
+
+.front {
+  z-index: 2;
+}
+
+.face {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.container:hover .face{
+  transform: rotateY(180deg);
+  transition: transform 3s ease-in;
+}
+
+
+.container:hover .face.back{
+  transform: rotateY(180deg);
+  transition: transform 4s ease-in;
+}
+
+.container:hover .face.front{
+  transform: rotateY(90deg);
+  transition: transform 3s ease-in;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="container-card">
+          <div class="face front"><img src="./assets/Alice.png" alt=""></div>
+          <div class="face back"><img src="./assets/Background.png" alt=""></div>
+        </div>      
+    
+      </div>
+</body>
+</html>
